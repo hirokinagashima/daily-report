@@ -18,6 +18,12 @@
                             <td><fmt:formatDate value='${report.report_date}' pattern='yyyy-MM-dd' /></td>
                         </tr>
                         <tr>
+                            <th>明日の予定</th>
+                            <td>
+                                <pre><c:out value="${report.tomorrow}" /></pre>
+                            </td>
+                        </tr>
+                        <tr>
                             <th>内容</th>
                             <td>
                                 <pre><c:out value="${report.content}" /></pre>

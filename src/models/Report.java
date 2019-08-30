@@ -62,6 +62,10 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    @Lob
+    @Column(name = "tomorrow", nullable = false)
+    private String tomorrow;
+
     //ゲッターセッター
     public Integer getId() {
         return id;
@@ -117,6 +121,14 @@ public class Report {
 
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
+    }
+
+    public String getTomorrow() {
+        return tomorrow;
+    }
+
+    public void setTomorrow(String tomorrow) {
+        this.tomorrow = tomorrow;
     }
 
 
